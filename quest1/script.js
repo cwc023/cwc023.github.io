@@ -51,3 +51,4 @@ async function init() {
     // also remove the created canvas tag
     document.getElementById("renderCanvas").remove();
   });
+  
