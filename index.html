@@ -27,7 +27,7 @@
             ];
             var spellResult = document.getElementById("spellResult").innerText = "Your spell is casting...";
             var randomSpell = spells[Math.floor(Math.random() * spells.length)];
-            spellResult.innerHTML = "You cast the spell: " + randomSpell + "!";
+            spellResult.innerText = "You cast the spell: " + randomSpell + "!";
         }
     </script>
 </body>
