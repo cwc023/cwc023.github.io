@@ -27,10 +27,11 @@
             ];
             // Get the element with the id "spellResult"
             var spellResult = document.getElementById("spellResult");
-            spellResult.innterText = "Your spell is casting...";
-            // sleep for one second to simulate casting time
+            spellResult.innerText = "Your spell is casting...";
+            
+            // Wait one second before displaying the spell
             setTimeout(function() {
-                // Randomly select a spell from the list using Math.random() and Math.floor() 
+                // Randomly select a spell from the list using Math.random()
                 var randomSpell = spells[Math.floor(Math.random() * spells.length)];
                 spellResult.innerText = "You cast the spell: " + randomSpell + "!";
             }, 1000);
