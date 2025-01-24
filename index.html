@@ -26,9 +26,14 @@
                 "Summon Golem",
             ];
             var spellResult = document.getElementById("spellResult");
-            // Randomly select a spell from the list using Math.random() and Math.floor() 
-            var randomSpell = spells[Math.floor(Math.random() * spells.length)];
-            spellResult.innerText = "You cast the spell: " + randomSpell + "!";
+            spellResult.innterText = "Casting spell...";
+            // sleep for one second to simulate casting time
+            setTimeout(function() {
+                // Randomly select a spell from the list using Math.random() and Math.floor() 
+                var randomSpell = spells[Math.floor(Math.random() * spells.length)];
+                spellResult.innerText = "You cast the spell: " + randomSpell + "!";
+            }, 1000);
+            
         }
     </script>
 </body>
