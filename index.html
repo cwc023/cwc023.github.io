@@ -25,7 +25,8 @@
                 "Summon Angel",
                 "Summon Golem",
             ];
-            var spellResult = document.getElementById("spellResult").innerText = "Your spell is casting...";
+            var spellResult = document.getElementById("spellResult");
+            spellResult.innerText = "Your spell is casting...";
             var randomSpell = spells[Math.floor(Math.random() * spells.length)];
             spellResult.innerText = "You cast the spell: " + randomSpell + "!";
         }
