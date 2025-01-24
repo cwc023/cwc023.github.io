@@ -26,13 +26,9 @@
                 "Summon Golem",
             ];
             var spellResult = document.getElementById("spellResult");
-            spellResult.innerText = "Your spell is casting...";
-            // Wait for 1 second before showing the result
-            setTimeout(function() {
-                // Randomly select a spell from the list using Math.random()
-                var randomSpell = spells[Math.floor(Math.random() * spells.length)];
-                spellResult.innerText = "You cast the spell: " + randomSpell + "!";
-            }, 1000);
+            // Randomly select a spell from the list using Math.random() and Math.floor() 
+            var randomSpell = spells[Math.floor(Math.random() * spells.length)];
+            spellResult.innerText = "You cast the spell: " + randomSpell + "!";
         }
     </script>
 </body>
