@@ -7,7 +7,4 @@ html, body {
     background-color: #003865;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
